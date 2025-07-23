@@ -64,7 +64,7 @@ func main() {
 	// Токен Telegram-бота
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error to loading .env fail")
+		log.Println("Файл .env не найден — используем переменные окружения от Render")
 	}
 	botToken := os.Getenv("TBT") // или замените на ваш токен в виде строки
 
